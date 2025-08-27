@@ -8,7 +8,7 @@ using namespace std;
 
 int main() 
 {
-        cout << "-----Exmaple 1: cout data-----" << endl;
+    cout << "-----Exmaple 1: cout data-----" << endl;
     cout << "This is a C++ code";
     // varibles = termporary stroge of data
     
@@ -22,7 +22,7 @@ int main()
     cout << "The user is " << username << endl;
     
     
-    // Exercise
+    cout << "-----Excerise-----" << endl;
     string country;
     char gender;
     int zipcode;
