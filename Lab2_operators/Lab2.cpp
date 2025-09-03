@@ -27,6 +27,16 @@ int main(){
     // print results
     cout<<"The height of a free fall obejct at " << time << " seconds is " << height<< " meters" <<endl;
 
+    cout<<"ln----- example 2: assignment operator -----" << endl;
+    int number1 = 10;
+    int number2 = 3;
+    cout<<"original number1 = "<< number1<<endl;
+    number1 ++;
+    cout<<"updated number1 = " <<number1<<endl;
+    cout<<"updated number2 = " <<number2<<endl;
+    number2 --;
+    cout<<"updated number2 = " << number2 << endl;
+
     cout<<"\n----- exercise:  Simple Calculator and Logical Operations -----" << endl;
     int a;
     int b;
@@ -34,6 +44,12 @@ int main(){
     cin >> a;
     cout << "Enter the second number(b): ";
     cin >> b;
+
+    a += 10;
+    b -= 5;
+
+    cout << a;
+
     return 0;
 }
 
