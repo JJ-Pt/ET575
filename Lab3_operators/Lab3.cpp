@@ -1,6 +1,6 @@
 /*
 QiuLiangJun Li
-Lab 2, operators
+Lab 3, operators
 Sep 2, 2025
 */
 
