@@ -66,7 +66,7 @@ int main(){
     int Length_of_word = word.length();
     cout<<"The Message has: " << Length_of_word << endl;
     //replace 2 characters from the 3rd character with "-- $ --" . Print result
-    word.replace(2,2,"$");
+    word.replace(2,2,"$$");
     cout << "Replace message = " << word << endl;
     //remove 3 characters from the end of the word. Print result
     word.erase(Length_of_word-3,3);
