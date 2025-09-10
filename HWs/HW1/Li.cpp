@@ -20,7 +20,8 @@ int main(){
 
     // concatenate strings, and print the result
     string str2 = str1 + city + name;
-    cout << "concatenated message: "<< str2 << endl;
+    // print the concatenated message
+     cout << "concatenated message: "<< str2 << endl;
 
     // find the length of string variable, and print the result
     int length_str = str2.length();
