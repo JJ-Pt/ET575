@@ -18,23 +18,24 @@ int main(){
     cout << "Enter your name: ";
     cin >> name;
 
-    // concatenate strings, and print the result
+    // concatenate strings
     string str2 = str1 + city + name;
-    // print the concatenated message
-     cout << "concatenated message: "<< str2 << endl;
+    cout << "concatenated message: " << str2;
 
-    // find the length of string variable, and print the result
+    // find the length of string variable
     int length_str = str2.length();
-    cout << "Message length: " << length_str << endl;
 
     // find the word ma, and store in a variable
     int index_ma = str2.find("ma");
-    cout << "The index of ma = " << index_ma << endl;
 
-    // replace ma with %--%
-    str2.replace(index_ma,2,"%%");
-    cout << "Replace 'ma' with %---%: " << str2 <<endl;
-    
+    // replace ma with %---%
+    string str3 = str2.replace(index_ma, 2, "%---%");
+
+    // print all results in a single line with tab alignment
+    cout << "\nMessage length: " << length_str << "\t"
+         << "\nThe index of ma = " << index_ma << "\t"
+         << "\nReplace 'ma' with %---%: " << str3 << endl;
+
     return 0;
 
 }
