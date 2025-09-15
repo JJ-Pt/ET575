@@ -42,7 +42,8 @@ int main(){
     const float PI = 3.14159;
 
     // Step 2: Input radius and height
-    float radius, height;
+    float radius;
+    float height;
     cout << "Enter the radius: ";
     cin >> radius;
     cout << "Enter the height: ";
