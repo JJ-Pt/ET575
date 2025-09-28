@@ -32,7 +32,7 @@ int main(){
 
     cout<<"\n-----Exmaple 5: inserting character/s in a string -----" << endl;
     // insert the word "maybe"
-    msg.insert(5," maybe ");
+    msg.insert(5," maybe");
     cout<<"After insert method = " << msg << endl;
 
     cout<<"\n-----Exmaple 6: inserting character/s to the end of a string -----" << endl;
