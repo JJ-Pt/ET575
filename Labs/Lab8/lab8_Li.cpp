@@ -74,8 +74,6 @@ for(x ;x<=5;x++ ){
 
     cout << "\nTotal numbers that are multiples of 2: " << countEven << endl;
 
-
-
     cout<<"\n----- EXCERCISE 2 -----"<<endl;
     int user_input = 0;
     cout<<"Enter an initial value: ";
