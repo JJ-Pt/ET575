@@ -140,6 +140,8 @@ int main()
     cout << "\n-----Exercise------"<<endl;
     int sum = 0;
     int num2;
+    
+    // Add num to sum until user enters 0
     do{
         cout<< "Enter a number (0 to END): ";
         cin >> num2;
