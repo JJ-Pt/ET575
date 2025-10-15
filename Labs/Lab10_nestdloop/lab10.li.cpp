@@ -76,7 +76,8 @@ int main(){
     cout<<"The sum is: "<<sum<<endl<<"The count is: "<<count<<endl;
 
     cout<<"\n-----Exercise B -----" << endl;
-    int i=0, add=0;
+    int add=0;
+    i = 0;
     while(i<=10){
     i++;
     if(i<5 && i !=2){
