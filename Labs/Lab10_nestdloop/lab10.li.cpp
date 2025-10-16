@@ -56,7 +56,7 @@ int main(){
     dimension = 10;
     for(int row = 1; row <= dimension; row++){
         for(int col = 1; col <= dimension; col++){
-            if((4>=col && col>=3 && 8>=row && row>=3) || (col>=5 && col<=6 && row>=5 & row<=6) || (col>=7 && col<=8 && row>=3 && row<=8))
+            if((4>=col && col>=3 && 8>=row && row>=3) || (col>=5 && col<=6 && row>=5 && row<=6) || (col>=7 && col<=8 && row>=3 && row<=8))
                 cout<<" % ";
             else
                 cout<<" . ";
