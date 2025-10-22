@@ -53,5 +53,11 @@ int main(){
     string checknum = checknumber(x);
     printnumber(x, checknum);
 
+
+    cout<<"\n-----Exercise -----"<<endl;
+    int a = 6;
+    bool check_e = checkeven(a);
+    printeven(a, check_e);
+
     return 0;
 }

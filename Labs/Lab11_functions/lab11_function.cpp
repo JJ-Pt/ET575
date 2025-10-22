@@ -76,3 +76,18 @@ void printnumber(int x, string n){
     cout<<"Number "<< x << " Is "<< n << endl;
     return;
 }
+
+// Exercise functions
+bool checkeven(int a){
+    if(a%2 == 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+void printeven(int number, bool result){
+    cout<<"Is "<< number << " Even? " << result << endl;
+    return;
+}
