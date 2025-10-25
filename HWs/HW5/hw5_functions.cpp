@@ -64,26 +64,23 @@ bool inOrder(int num1,int num2,int num3){
 
 void runProgram(int num1, int num2, int num3, bool desc_order){
     char choice;
-    do{
-        if(desc_order){
-            cout<<"The numbers "<< num1 << " , " << num2 << " , " << num3 << " are in descending order." << endl; 
-        }
-        else{
-            cout<<"The numbers " << num1 << ", " << num2 << ", and " << num3 << " are NOT in descending order." << endl;
-        }
+    if(desc_order){
+        cout<<"The numbers "<< num1 << " , " << num2 << " , " << num3 << " are in descending order." << endl; 
+    }
+    else{
+        cout<<"The numbers " << num1 << ", " << num2 << ", and " << num3 << " are NOT in descending order." << endl;
+    }
 
-        cout << "Do you want to run the program agian? (y/n): ";
-        cin>>choice;
-        if (choice == 'Y' || choice == 'y') {
-            int n1 = collectNumber();
-            int n2 = collectNumber();
-            int n3 = collectNumber();
-            bool again_desc = inOrder(n1, n2, n3);
-            runProgram(n1, n2, n3, again_desc);  // recursive call
-        } else {
-            cout << "Program ended." << endl;
-            exit;
-        }     
-    }while(true);
+    cout << "Do you want to run the program agian? (y/n): ";
+    cin>>choice;
+    if (choice == 'Y' || choice == 'y') {
+        int n1 = collectNumber();
+        int n2 = collectNumber();
+        int n3 = collectNumber();
+        bool again_desc = inOrder(n1, n2, n3);
+        runProgram(n1, n2, n3, again_desc);
+    } else {
+        cout << "Program ended." << endl;
+    }     
     return;
 }
