@@ -12,7 +12,7 @@ using namespace std;
 
 int main(){
     srand(time(0));
-
+    
     cout<<"\n ----- Example 1: random number -----" << endl;
     int r = random_number();
     cout << "random number: " << r << endl;
