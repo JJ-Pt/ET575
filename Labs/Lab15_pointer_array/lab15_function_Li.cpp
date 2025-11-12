@@ -131,6 +131,6 @@ void exercise(){
             continue;
         }
     }
-    cout << "The highest score is " << maxscore << endl;
+    cout << "The maximum score is " << maxscore << endl;
 }
 
