@@ -24,7 +24,14 @@ int main(){
     cout << "\n----- Example 3: array -----" << endl;
     arrays();
 
-    
+    cout << "\n----- Example 4: array sizes-----" << endl;
+    sizeofarrays();
+
+    cout << "\n----- Example 5: Loop in an array -----" << endl;
+    looparray();
+
+    cout << "\n----- Lab Exercise -----" << endl;
+    exercise();
 
     return 0;
 }

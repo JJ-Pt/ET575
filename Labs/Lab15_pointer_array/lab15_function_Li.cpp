@@ -80,9 +80,57 @@ void arrays(){
     cout << "The fourth name is "<<names[3]<<endl;
 }
 
+// example 4: sizeof arrays
 void sizeofarrays(){
     cout<<"size of char "<< sizeof(char) <<endl;
     cout<<"size of int "<< sizeof(int) <<endl;
     cout<<"size of double "<< sizeof(double) <<endl;
     cout<<"size of string "<< sizeof(string) <<endl;
+
+    int age_children[3] = {12,8,5};
+    cout<<"Total size of age children "<< sizeof(age_children) <<endl; // 4n = 12 bytes, n = number of elements
+    cout<<"Size of age_children " << sizeof(age_children)/sizeof(int) <<endl; // number of elements in the array
 }
+
+// example 5: loop in an array
+void looparray(){
+    string names[] = {"Annie","Peter","Carl","Charles","Brian"};
+    int sizenames = sizeof(names)/sizeof(names[0]);
+    int counter = 0;
+
+    for(int i = 0; i < sizenames; i++){
+        cout << names[i] << "\t";
+        // count how many names has 5+ characters
+        if(names[i].length() >= 5){
+            counter++;
+        }
+    }
+    cout << endl;
+    cout << "There is/are "<< counter << " names with 5+ characters." << endl;
+}
+
+void exercise(){
+     // declare an array with  values
+     int scores[5];
+
+     // assign value to each item in array 'scores'
+    scores[0] = 60;
+    scores[1] = 90;
+    scores[2] = 75;
+    scores[3] = 88;
+    scores[4] = 100;
+
+    int maxscore = scores[0]; // declare maxscore equal to the first item in the array
+    int sizescores = sizeof(scores)/sizeof(scores[0]);
+
+    for(int i = 1; i < sizescores; i++){
+        if(scores[i] > maxscore){
+            maxscore = scores[i];
+        }
+        else{
+            continue;
+        }
+    }
+    cout << "The highest score is " << maxscore << endl;
+}
+
