@@ -88,12 +88,9 @@ int sum_even_numbers(int *arr, int size_array){
     int sum = 0;
     for (int i = 0; i < size_array; i++)
     {
-        if(arr[i] % 2 == 0)
-        {
+        if(arr[i] % 2 == 0){
             sum += arr[i];
-        }
-        else
-            continue;
+        }    
     }
     return sum;
 } 
