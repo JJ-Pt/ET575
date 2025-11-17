@@ -23,7 +23,6 @@ int main(){
     int arr_pos_numbers[ARRAY_SIZE];
     int listsize = 0;
     int targetnumber = 8;
-
     // calling functions
     fillarray(arr_pos_numbers, listsize);
     printarray(listsize, arr_pos_numbers); // Testing if the
