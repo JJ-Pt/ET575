@@ -21,7 +21,7 @@ void fillup(int size_array , int array[])
 }
 
 // Function to print values in an array.
-void print(int size_array , int array[]){
+void printarray(int size_array , int array[]){
     for (int i = 0; i < size_array; i++)
     {
         cout << array[i] << "\t";
@@ -50,4 +50,34 @@ void fillarray(int *array, int &number_user_index){
     // update the value of variable number_user_index, which is the last index of all positive numbers
     number_user_index = index;
 
+}
+
+// Search function to search for a number in the array
+int search(const int *arr, int number_user_index, int target)
+{
+    int index = 0;
+    bool found = false;
+
+    while((!found) && (index < number_user_index))
+    {
+        if(target == arr[index])
+        {
+            found = true;
+        }
+        else
+        {
+            index++;
+        }
+    }
+
+    if(found)
+      return index;
+    else
+        return -1;
+}
+
+// Function to print result
+void printresult(int resultsearch, int target)
+{
+    cout << "What is the index of number " << target << " in the array? " << resultsearch << endl;
 }
