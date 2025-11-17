@@ -29,5 +29,10 @@ int main(){
     int resultsearch = search(arr_pos_numbers, listsize, targetnumber);
     printresult(resultsearch, targetnumber);
 
+    cout << "\n-----EXERCISE -----" << endl;
+    int arr_numbers[]= {6,-10,9,12,-3,-8,5,7,4,0};
+    int arr_size = sizeof(arr_numbers) / sizeof(int);
+    
+    print_result_exercise(sum_even_numbers(arr_numbers,arr_size), count_negative(arr_numbers,arr_size));
     return 0;
 }

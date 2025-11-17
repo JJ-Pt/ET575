@@ -81,3 +81,37 @@ void printresult(int resultsearch, int target)
 {
     cout << "What is the index of number " << target << " in the array? " << resultsearch << endl;
 }
+
+//EXERCISE
+// Function that returns the sum of all even numbers in an array
+int sum_even_numbers(int *arr, int size_array){
+    int sum = 0;
+    for (int i = 0; i < size_array; i++)
+    {
+        if(arr[i] % 2 == 0)
+        {
+            sum += arr[i];
+        }
+        else
+            continue;
+    }
+    return sum;
+} 
+// function that returns the counts of all negative numbers in an array
+int count_negative(int *arr, int size_array){
+    int count = 0;
+    for (int i = 0; i < size_array; i++)
+    {
+        if(arr[i] < 0)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+// Print result
+void print_result_exercise(int sum_even, int count_neg){
+    cout << "Sum of all even numbers in the array: " << sum_even << endl;
+    cout << "Count of negative numbers in the array: " << count_neg << endl;
+}
