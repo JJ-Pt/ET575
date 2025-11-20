@@ -49,13 +49,11 @@ int array_min(int ar[], int s)
 //function to return the average of all numbers in an array 
 float array_avg(int ar[], int s) 
 {   
-    int count = 0;
     float sum = 0;
     for (int i = 0; i < s; i++){
         sum += ar[i];
-        count++;
     }
-    return sum / count;
+    return sum / s;
     
 
 } 
