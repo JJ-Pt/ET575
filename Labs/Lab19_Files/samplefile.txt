@@ -1,0 +1,8 @@
+ET 575
+Fall 2025, Nov 24, 2025
+QiuLiangJun Li
+-----APPEND-----
+3
+2
+1
+GAME OVER!
