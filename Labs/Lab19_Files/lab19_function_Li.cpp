@@ -98,3 +98,29 @@ void appendfile(string filename){
     // close file
     fout.close();
 }
+
+// EXERCISE:
+// Function 1: create a file named 'data_user.txt'
+void creatfile(string filename){
+    fout.open(filename);
+    fout << "This is my output file – QiuLiangJun Li" << endl;
+    fout.close();
+}
+
+// Function 2: append a new message to 'data_user.txt'
+void appendfile_exercise(string filename, string msg){
+    fout.open("data_user.txt", ios::app);
+    fout << msg << endl;
+    fout.close();
+}
+
+// Function 3: read and display the content of 'data_user.txt'
+void read_file_exercise(string filename){
+    fin.open(filename);
+    string line;
+
+    while(getline(fin, line)){
+        cout << line << endl;
+    }
+    fin.close();
+}

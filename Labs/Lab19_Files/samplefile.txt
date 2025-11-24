@@ -6,3 +6,9 @@ QiuLiangJun Li
 2
 1
 GAME OVER!
+
+-----APPEND-----
+3
+2
+1
+GAME OVER!

@@ -25,5 +25,10 @@ int main(){
     cout << "\n ----- Example 5: append data into a file -----" << endl;
     appendfile("samplefile.txt");
 
+    cout << "\n ----- EXERCISE -----" << endl;
+    creatfile("data_user.txt");
+    appendfile_exercise("data_user.txt", "APPENDED LINE 1");
+    read_file_exercise("data_user.txt");
+
     return 0;
 }
