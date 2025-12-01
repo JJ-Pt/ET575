@@ -47,7 +47,8 @@ void countEarth(string filename)
     string word;
     while (fin >> word)
     {
-        if (word == "Earth")
+        cout<<word<<endl;
+        if (word == "Earth" || word == "Earth,")
             count++;
     }
     fin.close();
